@@ -53,3 +53,16 @@ this.$bus.$emit('foo');
   <template v-slot:content="{bla}">{{bla}}</template>
 </zizujian>
 ```
+
+#### .sync和v-model的异同
+```
+<!-- v-model 是语法糖 -->
+<Input v-model="username">
+<!-- 默认等效与下面这行 -->
+<Input :value="username" @input="username=$event.target.value">
+
+<Input :value.sync="model.username">
+<!-- 等效与下面这行，那么和v-model的区别只有事件名称的变化 -->
+<Input :foo="username" @update:foo="username=$event">
+```
+- v-model控制能力在子集，习惯上表单元素用v-model；.sync的控制能力在父级，事件名称也相对固定update：xx

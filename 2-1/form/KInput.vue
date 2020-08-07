@@ -22,6 +22,8 @@ export default {
       this.$emit("input", e.target.value);
 
       // 通知FormItem校验
+      // https://github.com/ElemeFE/element/blob/dev/src/mixins/emitter.js
+      // https://github.com/ElemeFE/element/blob/dev/packages/input/src/input.vue
       this.$parent.$emit("validate");
     },
   },
