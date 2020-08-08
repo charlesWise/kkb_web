@@ -8,6 +8,8 @@
 </template>
 
 <script>
+import emitter from '../mixins/emitter';
+
 export default {
   inheritAttrs: false, // 为了防止外层div容器继承type="text"之类属性
   props: {
@@ -16,6 +18,7 @@ export default {
       default: "",
     },
   },
+  mixins: ['emitter'],
   methods: {
     onInput(e) {
       // 通知父组件数值变化
@@ -24,7 +27,9 @@ export default {
       // 通知FormItem校验
       // https://github.com/ElemeFE/element/blob/dev/src/mixins/emitter.js
       // https://github.com/ElemeFE/element/blob/dev/packages/input/src/input.vue
-      this.$parent.$emit("validate");
+      // this.$parent.$emit("validate");
+
+      this.dispatch("validate"); // 派发事件
     },
   },
 };
