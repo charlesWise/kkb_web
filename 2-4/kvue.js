@@ -33,6 +33,7 @@ class KVue {
         return val;
       },
       set(newval) {
+        // 这里val采用一种闭包的形式，并不是obj[key] = newval，而是val = newval赋值
         if (newval !== val) {
           val = newval;
           dep.notify();
