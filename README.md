@@ -12,3 +12,7 @@
 #### 2-4 vue 源码一
 
 #### 2-5 vue 源码二
+
+#### 2-6 vue 源码三
+
+- 思维导图[https://www.processon.com]
