@@ -16,3 +16,5 @@
 #### 2-6 vue 源码三
 
 - 思维导图[https://www.processon.com]
+
+#### 2-7 vue 最佳实战

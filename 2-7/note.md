@@ -1,0 +1,1 @@
+- vue inspect (--rules) (svg)
