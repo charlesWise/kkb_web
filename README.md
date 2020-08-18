@@ -17,4 +17,6 @@
 
 - 思维导图[https://www.processon.com]
 
-#### 2-7 vue 最佳实战
+#### 2-7 vue 最佳实战一
+
+#### 2-8 vue 最佳实战二
