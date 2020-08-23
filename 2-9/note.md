@@ -1,4 +1,4 @@
-#### nuxt.js[https://zh.nuxtjs.org/]
+#### [nuxt.js](https://zh.nuxtjs.org/)
 
 #### asyncData
 - 1、前后端都会执行，时间点在beforeCreate之前
