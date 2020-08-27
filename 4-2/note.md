@@ -1,0 +1,3 @@
+- header上面定值就会触发预检option请求
+- 所谓session基于cookie，session无效及cookie无效
+- 反向代理是在服务器中 正向代理是在客户端
